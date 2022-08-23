@@ -13,6 +13,11 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using RepositoryLayer;
+using RepositoryLayer.Repositories;
+using RepositoryLayer.Repositories.Interfaces;
+using ServiceLayer.Mapping;
+using ServiceLayer.Services;
+using ServiceLayer.Services.Interfaces;
 
 namespace ApiUI
 {
@@ -35,6 +40,13 @@ namespace ApiUI
             {
                 option.UseSqlServer(Configuration["ConnectionStrings:Mssql"]);
             });
+
+            services.AddAutoMapper(typeof(MappingProfile));
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+
 
             services.AddSwaggerGen(c =>
             {

@@ -56,6 +56,7 @@ namespace RepositoryLayer.Repositories
         public async Task<T> FindAsync(Expression<Func<T, bool>> predicate)
         {
             T entity = await table.FindAsync(predicate);
+
             if (entity is null) throw new NullReferenceException();
 
             return entity;
