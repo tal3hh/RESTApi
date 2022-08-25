@@ -71,3 +71,6 @@ C:\Users\HP\Desktop\C#\RESTApi\ApiArchitecture\ApiUI\obj\Debug\net5.0\ApiUI.dll
 C:\Users\HP\Desktop\C#\RESTApi\ApiArchitecture\ApiUI\obj\Debug\net5.0\ref\ApiUI.dll
 C:\Users\HP\Desktop\C#\RESTApi\ApiArchitecture\ApiUI\obj\Debug\net5.0\ApiUI.pdb
 C:\Users\HP\Desktop\C#\RESTApi\ApiArchitecture\ApiUI\obj\Debug\net5.0\ApiUI.genruntimeconfig.cache
+C:\Users\HP\Desktop\C#\RESTApi\ApiArchitecture\ApiUI\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\HP\Desktop\C#\RESTApi\ApiArchitecture\ApiUI\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\HP\Desktop\C#\RESTApi\ApiArchitecture\ApiUI\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll

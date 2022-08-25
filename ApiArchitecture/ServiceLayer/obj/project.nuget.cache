@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1J8yuAivr+Pj4v5hPRAVwKzYF9Bao/ZIILBlAguhrYJGTw33h5Dn7EBdBe0Odb8ewv8i0yj8KndXyt16hXWzWA==",
+  "dgSpecHash": "yM2fM1mLLzNaVrWTgbaCgoasOow1JAstg4WcxpL88xNrB8y8NUpgOqZKswa1lkjYIrJ/jFwSPhdJqj5t1uhCBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\Desktop\\C#\\RESTApi\\ApiArchitecture\\ServiceLayer\\ServiceLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

@@ -14,6 +14,7 @@ namespace ServiceLayer.Mapping
         public MappingProfile()
         {
             CreateMap<Customer, CustomerListDto>().ReverseMap();
+            CreateMap<Customer, CustomerCreateDto>().ReverseMap();
         }
     }
 }

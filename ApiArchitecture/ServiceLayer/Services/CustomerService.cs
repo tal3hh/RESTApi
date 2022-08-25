@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using DomainLayer.Entities;
 using RepositoryLayer.Repositories.Interfaces;
 using ServiceLayer.DTOs.Customer;
 using ServiceLayer.Services.Interfaces;
@@ -28,6 +29,9 @@ namespace ServiceLayer.Services
             return _mapper.Map<List<CustomerListDto>>(model);
         }
 
-
+        public async Task InsertAsync(CustomerCreateDto dto)
+        {
+            await _repo.CreateAsync(_mapper.Map<Customer>(dto));
+        }
     }
 }

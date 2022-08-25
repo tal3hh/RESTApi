@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -15,6 +17,7 @@ using Microsoft.OpenApi.Models;
 using RepositoryLayer;
 using RepositoryLayer.Repositories;
 using RepositoryLayer.Repositories.Interfaces;
+using ServiceLayer.DTOs.Customer;
 using ServiceLayer.Mapping;
 using ServiceLayer.Services;
 using ServiceLayer.Services.Interfaces;
@@ -34,7 +37,7 @@ namespace ApiUI
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation();
 
             services.AddDbContext<AppDbContext>(option =>
             {
@@ -46,6 +49,7 @@ namespace ApiUI
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddTransient<IValidator<CustomerCreateDto>, CustomerCreateValidation>();
 
 
             services.AddSwaggerGen(c =>

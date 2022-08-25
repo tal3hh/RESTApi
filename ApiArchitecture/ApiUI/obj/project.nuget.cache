@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "XN+B52lF0clorSMiPzg9503+vIrMc5Zq/Delb1pym6wDoNnYE2vysOFBhqPFb9KzYzi0qC55XMWv44GZ/EzXyg==",
+  "dgSpecHash": "RFzGsWuqJ1P0SBRjVOKgAxGjyaucAy+d4imzJbPY3PAo+M77/yZ8rilC8ZXwiuj6NuZT9Ttw/7LfqPWUJQRGDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\Desktop\\C#\\RESTApi\\ApiArchitecture\\ApiUI\\ApiUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.1\\fluentvalidation.aspnetcore.11.2.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.0\\fluentvalidation.dependencyinjectionextensions.11.2.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

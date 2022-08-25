@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ServiceLayer.DTOs.Customer;
 using ServiceLayer.Services.Interfaces;
 
 namespace ApiUI.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class CustomerController : ControllerBase
+    public class CustomerController : BaseController
     {
         private readonly ICustomerService _service;
 
@@ -23,6 +22,16 @@ namespace ApiUI.Controllers
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _service.GetAllAsync());
+        }
+
+
+        [HttpPost]
+        [Route("Create")]
+        public async Task<IActionResult> Create([FromBody] CustomerCreateDto dto)
+        {
+            await _service.InsertAsync(dto);
+
+            return Ok();
         }
     }
 }
